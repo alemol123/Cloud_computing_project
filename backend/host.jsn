@@ -1,0 +1,6 @@
+my-backend/
+  host.json
+  local.settings.json
+  package.json
+  MyFunction1/index.js
+  MyFunction2/index.js
