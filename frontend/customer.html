@@ -3,9 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <title>Customer Portal</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <h1>Customer Portal</h1>
-  <!-- order UI will go here -->
+
+  <section class="card">
+    <h2>Choose Delivery Area</h2>
+    <label>
+      Delivery Area:
+      <select id="customerArea">
+        <option value="">-- choose area --</option>
+        <option value="Central">Central</option>
+        <option value="North">North</option>
+        <option value="South">South</option>
+        <option value="East">East</option>
+        <option value="West">West</option>
+      </select>
+    </label>
+    <button class="button" onclick="loadMeals()">Load meals</button>
+    <p id="loadMealsMessage"></p>
+  </section>
+
+  <section class="card">
+    <h2>Available Meals</h2>
+    <table id="mealsTable">
+      <thead>
+        <tr>
+          <th>Restaurant</th>
+          <th>Dish</th>
+          <th>Description</th>
+          <th>Prep (min)</th>
+          <th>Price</th>
+          <th>Qty</th>
+        </tr>
+      </thead>
+      <tbody id="mealsBody">
+        <!-- rows will be added by JS -->
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Customer Details</h2>
+    <label>
+      Name:
+      <input type="text" id="customerName" />
+    </label>
+    <label>
+      Address:
+      <input type="text" id="customerAddress" />
+    </label>
+    <button class="button" onclick="submitOrder()">Place Order</button>
+    <p id="orderMessage"></p>
+  </section>
+
+  <p><a href="index.html">⬅ Back to home</a></p>
+
+  <script src="app.js"></script>
 </body>
 </html>
