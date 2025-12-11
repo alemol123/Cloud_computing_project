@@ -3,9 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <title>Restaurant Portal</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <h1>Restaurant Portal</h1>
-  <!-- form will go here -->
+
+  <form id="mealForm" onsubmit="registerMeal(event)">
+    <label>
+      Restaurant Name:
+      <input type="text" id="restaurantName" required />
+    </label>
+
+    <label>
+      Dish Name:
+      <input type="text" id="dishName" required />
+    </label>
+
+    <label>
+      Description:
+      <textarea id="description" required></textarea>
+    </label>
+
+    <label>
+      Prep Time (minutes):
+      <input type="number" id="prepTime" min="1" required />
+    </label>
+
+    <label>
+      Price:
+      <input type="number" id="price" step="0.01" min="0" required />
+    </label>
+
+    <label>
+      Delivery Area:
+      <select id="area" required>
+        <option value="">-- choose area --</option>
+        <option value="Central">Central</option>
+        <option value="North">North</option>
+        <option value="South">South</option>
+        <option value="East">East</option>
+        <option value="West">West</option>
+      </select>
+    </label>
+
+    <button type="submit" class="button">Save Meal</button>
+  </form>
+
+  <p id="restaurantMessage"></p>
+
+  <p><a href="index.html">⬅ Back to home</a></p>
+
+  <script src="app.js"></script>
 </body>
 </html>
