@@ -59,3 +59,14 @@ input, textarea, select {
   margin-top: 1rem;
   font-weight: bold;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
