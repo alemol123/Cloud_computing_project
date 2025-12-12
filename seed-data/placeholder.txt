@@ -1,0 +1,1 @@
+This folder will store the data seeding scripts for the app menu. Containing 3 zones, 30 restaurants, 3 meals per restaurant.
