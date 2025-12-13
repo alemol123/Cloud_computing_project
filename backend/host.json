@@ -1,6 +1,7 @@
-my-backend/
-  host.json
-  local.settings.json
-  package.json
-  MyFunction1/index.js
-  MyFunction2/index.js
+{
+  "version": "2.0",
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[3.*, 4.0.0)"
+  }
+}
